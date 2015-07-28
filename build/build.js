@@ -10,7 +10,7 @@ fs.readFile('src/wrapper.js', 'utf8', function (err, wrapper) {
       return console.log(err);
     }
 
-    var output = wrapper.replace('{{lib}}', lib);
+    var output = wrapper.replace('{{lib}}', lib).replace('this.d3 = d3', 'd3Export = d3');
 
     fs.writeFile("dist/ng-d3.js", output, function(err) {
         if(err) {

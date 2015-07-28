@@ -4,6 +4,7 @@
   "description": "Angular wrapper for d3",
   "main": "dist/ng-d3.js",
   "scripts": {
+    "test": "karma start",
     "build": "node build/build.js && uglifyjs dist/ng-d3.js -o dist/ng-d3.min.js"
   },
   "keywords": [
@@ -20,6 +21,12 @@
   "license": "MIT",
   "devDependencies": {
     "d3": "^3.5.6",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.3",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "phantomjs": "^1.9.17",
     "uglify-js": "^2.4.24"
   }
 }
