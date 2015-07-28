@@ -1,0 +1,25 @@
+{
+  "name": "ng-d3",
+  "version": "1.0.0",
+  "description": "Angular wrapper for d3",
+  "main": "dist/ng-d3.js",
+  "scripts": {
+    "build": "node build/build.js && uglifyjs dist/ng-d3.js -o dist/ng-d3.min.js"
+  },
+  "keywords": [
+    "ngd3",
+    "d3",
+    "angular",
+    "wrapper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sebadom/ng-d3.git"
+  },
+  "author": "Sebastian Dominguez <sebadominguezpicchio@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "d3": "^3.5.6",
+    "uglify-js": "^2.4.24"
+  }
+}

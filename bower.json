@@ -1,0 +1,23 @@
+{
+  "name": "ng-d3",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sebadom/ng-d3",
+  "authors": [
+    "Sebastian Dominguez <sebadominguezpicchio@gmail.com>"
+  ],
+  "description": "Angular wrapper for d3",
+  "main": "dist/ng-d3.js",
+  "keywords": [
+    "angular",
+    "d3",
+    "ngd3"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
