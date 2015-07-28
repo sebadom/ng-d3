@@ -1,7 +1,6 @@
 angular.module('ngD3', []).constant('d3', null).config(['$provide', function ($provide) {
-  this.d3 = null;
-
-  !function() {
+  var ctx = {
+    h: (function () { !function() {
   var d3 = {
     version: "3.5.6"
   };
@@ -9504,7 +9503,7 @@ angular.module('ngD3', []).constant('d3', null).config(['$provide', function ($p
   });
   if (typeof define === "function" && define.amd) define(d3); else if (typeof module === "object" && module.exports) module.exports = d3;
   this.d3 = d3;
-}();
-
-  $provide.constant('d3', this.d3);
+}(); }())
+  }
+  $provide.constant('d3', ctx.d3);
 }]);
