@@ -12,6 +12,10 @@
     "d3",
     "ngd3"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sebadom/ng-d3.git"
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",
