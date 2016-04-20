@@ -9553,7 +9553,7 @@ angular.module('ngD3', []).constant('d3', null).config(['$provide', function ($p
   d3.xml = d3_xhrType(function(request) {
     return request.responseXML;
   });
-  if (typeof define === "function" && define.amd) d3Export = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
+  if (typeof define === "function" && define.amd) d3Export = d3, this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else d3Export = d3, this.d3 = d3;
 }();
 
   $provide.constant('d3', d3Export);
